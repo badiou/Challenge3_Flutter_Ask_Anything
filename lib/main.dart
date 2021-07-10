@@ -5,10 +5,14 @@ import 'package:flutter/material.dart';
 void main() {
   return runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home:Scaffold(
         backgroundColor: Colors.blueAccent[100],
         appBar:AppBar(
-          title:Text('ASK ME ANYTHING'),
+          title:Center(
+            child:
+              Text('ASK ME ANYTHING'),
+          ),
           backgroundColor: Colors.blueAccent,
       ),
         body:BallPage(),
